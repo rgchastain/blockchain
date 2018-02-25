@@ -1,0 +1,210 @@
+.main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 1;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 931px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobiletoggle {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.sticky {
+  background-color: black;
+  opacity: .9;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+  width: 100%;
+}
+
+nav {
+  padding-right: 30px;
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 931px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 931px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 931px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+    display: block;
+  }
+}
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+nav ul a:hover {
+  color: black;
+}
+
+.mobiletoggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 931px) {
+  .mobiletoggle {
+    display: block;
+  }
+}
+.mobiletoggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  width: 100%;
+  
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  /*padding: 50px 10% 250px;*/
+  text-align: center;
+}
+
+body {
+  color: #8f8f8f;
+  background: black;
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  margin: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  /*url(http://www.philippefercha.com/cd/toggle-menu-bg.jpg)*/
+  background: url("tech.gif") no-repeat bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+}
+
+.hero button:hover {
+  background-color: white;
+  color: black;
+}
+
+::-webkit-input-placeholder {
+
+   text-align: center;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+
+   text-align: center;
+
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+
+   text-align: center;
+
+}
+
+:-ms-input-placeholder {  
+
+   text-align: center;
+
+}
+
+
+.hero input {
+  background-color: black;
+  color: white;
+  border:none;
+  border-radius: 5px;
+  height: 30px;
+  width: 300px;
+}
